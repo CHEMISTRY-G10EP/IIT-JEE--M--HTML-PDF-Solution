@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
-  <title>  2. Method of expressing concentration of solution-2</title>
+  <title>2. Method of expressing concentration of solution-2</title>
   
   <style>
     :root{--bg:#0f172a;--panel:#111827;--muted:#9ca3af;--text:#e5e7eb;
@@ -187,9 +187,20 @@ main.solutionMode #scorePanel{grid-column:1/-1;margin-top:20px;}
   }
 
   /* Space between panel & keypad */
-  body {
-    padding-bottom: 36vh; /* ensures lock box is not hidden behind instruction box */
+@media (max-width: 600px){
+
+  #lockScreen {
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-bottom: 40vh; /* space for instruction box */
+    overflow-y: auto;
   }
+
+  #lockScreen .box {
+    margin-bottom: 20px;
+  }
+
+}
 }
 
 /* Extra safeguard for very small phones */
