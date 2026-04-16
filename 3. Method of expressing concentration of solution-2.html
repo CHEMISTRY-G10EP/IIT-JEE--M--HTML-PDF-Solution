@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
-  <title>  3. Method of expressing concentration of solution-2</title>
+  <title>3. Method of expressing concentration of solution-2</title>
   
   <style>
     :root{--bg:#0f172a;--panel:#111827;--muted:#9ca3af;--text:#e5e7eb;
@@ -187,9 +187,20 @@ main.solutionMode #scorePanel{grid-column:1/-1;margin-top:20px;}
   }
 
   /* Space between panel & keypad */
-  body {
-    padding-bottom: 36vh; /* ensures lock box is not hidden behind instruction box */
+@media (max-width: 600px){
+
+  #lockScreen {
+    align-items: flex-start;
+    padding-top: 20px;
+    padding-bottom: 40vh; /* space for instruction box */
+    overflow-y: auto;
   }
+
+  #lockScreen .box {
+    margin-bottom: 20px;
+  }
+
+}
 }
 
 /* Extra safeguard for very small phones */
@@ -398,7 +409,7 @@ function getAutoPassword(){
 1:'C',2:'D',3:'D',4:'E',5:'B',
 6:'B',7:'A',8:'D',9:'D',10:'B',
 11:'A',12:'B',13:'A',14:'A',15:'B',
-16:'C',17:'B',18:'E',19:'B',20:'B',
+16:'C',17:'B',18:'D',19:'B',20:'B',
 21:'C',22:'C',23:'C',24:'B',25:'C',
 26:'D',27:'D',28:'C',29:'A',30:'C',
 31:'A',32:'C',33:'D',34:'A',35:'D',
